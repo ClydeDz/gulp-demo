@@ -1,0 +1,13 @@
+{
+    "name": "gulp-demo",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "gulp build"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-inject": "^5.0.5",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2"
+    }
+}

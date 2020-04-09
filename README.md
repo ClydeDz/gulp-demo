@@ -1,0 +1,2 @@
+# Gulp demo
+Compiles Sass files into minified CSS, automaticaly adds the CSS files as `<link>` tags into the HTML file, then uses these CSS links to inject the contents of the CSS file into the HTML file. 
