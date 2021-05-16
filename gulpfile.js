@@ -12,7 +12,7 @@ gulp.task('compile-sass', function() {
 
 gulp.task('add-styles', function () {
   var target = gulp.src('./src/index.html');
-  var sources = gulp.src(['./src/css/*.css'], {read: false, relative:true, removeTags: true}); 
+  var sources = gulp.src(['./src/css/*.css'], {}); 
   return target.pipe(inject(sources))
     .pipe(gulp.dest('./dist'));
 });
@@ -31,7 +31,6 @@ gulp.task('inject-styles', function () {
           return '<style>\n' + style + '\t</style>';
       }))
     .pipe(gulp.dest('./dist'));
-   
 });
 
 gulp.task('build', gulp.series('compile-sass', 'add-styles', 'inject-styles'));
